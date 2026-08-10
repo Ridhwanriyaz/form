@@ -21,4 +21,9 @@ function checkEmail() {
     return true;
 }
 
+function savePDF(event) {
+    event.preventDefault(); 
+    window.print();          
+}
+
 
