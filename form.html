@@ -2,86 +2,86 @@
 <html>
 <head>
     <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-<form>
-    <table>
+<div class="container">
 
-        <tr>
-            <td><b>FULL NAME</b></td>
-            <td><input type="text" placeholder="Enter Your Name"></td>
-        </tr>
+<form onsubmit="return checkEmail()" onreset="return confirmReset()">
 
-        <tr>
-            <td><b>EMAIL ID</b></td>
-            <td><input type="text" placeholder="Enter Your Email"></td>
-        </tr>
+    <div>
+        <label><b>FULL NAME</b></label><br>
+        <input type="text" placeholder="Enter Your Name">
+    </div>
+    <br>
 
-        <tr>
-            <td><b>AGE</b></td>
-            <td><input type="number" placeholder="Enter Your Age"></td>
-        </tr>
+    <div>
+        <label><b>EMAIL ID</b></label><br>
+        <input type="email" placeholder="Enter Your Email" id="email">
+    </div>
+    <br>
 
-        <tr>
-            <td>Which option best describes your current role?</td>
-            <td>
-                <select>
-                    <option>Student</option>
-                    <option>Employed</option>
-                    <option>Unemployed</option>
-                </select>
-            </td>
-        </tr>
+    <div>
+        <label><b>AGE</b></label><br>
+        <input type="number" placeholder="Enter Your Age" id="ageInput">
+    </div>
+    <br>
 
-        <tr>
-            <td>Would you like to list reference?</td>
-            <td>
-                <select>
-                    <option>YES</option>
-                    <option>NO</option>
-                </select>
-            </td>
-        </tr>
+    <div>
+        <label><b>Option best describes your current role?</b></label><br>
+        <select>
+            <option>Student</option>
+            <option>Employed</option>
+            <option>Unemployed</option>
+        </select>
+    </div>
+    <br>
 
-        <tr>
-            <td>Which position do you like to apply for?</td>
-            <td>
-                <select>
-                    <option>ABC</option>
-                    <option>DEF</option>
-                </select>
-            </td>
-        </tr>
+    <div>
+        <label><b>Would you like to list references?</b></label><br>
+        <select>
+            <option>YES</option>
+            <option>NO</option>
+        </select>
+    </div>
+    <br>
 
-        <tr>
-            <td>What programming languages do you know?</td>
-            <td>
-                <input type="checkbox"> Java <br>
-                <input type="checkbox"> Python <br>
-                <input type="checkbox"> C++ <br>
-                <input type="checkbox"> C <br>
-            </td>
-        </tr>
+    <div>
+        <label><b>Position would you like to apply for?</b></label><br>
+        <select>
+            <option>ABC</option>
+            <option>DEF</option>
+        </select>
+    </div>
+    <br>
 
-        <tr>
-            <td>Any comments?</td>
-            <td>
-                <textarea name="comments" rows="4" cols="25" placeholder="Enter Your Comments"></textarea>
-            </td>
-        </tr>
+    <div>
+        <label><b>Programming Languages You Know</b></label><br>
+        <input type="checkbox"> Java <br>
+        <input type="checkbox"> Python <br>
+        <input type="checkbox"> C++ <br>
+        <input type="checkbox"> C
+    </div>
+    <br>
 
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </td>
-        </tr>
+    <div>
+        <label><b>Comments</b></label><br>
+        <textarea rows="4" cols="25" placeholder="Enter Your Comments"></textarea>
+    </div>
+    <br>
 
-    </table>
+    <div class="button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+
 </form>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
