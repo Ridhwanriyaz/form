@@ -19,6 +19,12 @@ body{
     text-align: left;
 }
 
+@media print {
+    .button {
+        display: none;
+    }
+}
+
 
 
     
